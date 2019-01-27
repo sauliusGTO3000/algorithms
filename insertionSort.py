@@ -1,7 +1,7 @@
-unsortedList = [1, 2, 7, 4, 75, 10, 58, 221, 4, 32]
+import random_helper
+unsorted_list = random_helper.random_array(9)
 
-
-def insertion_sort_inc(array):
+def insertion_sort_asc(array):
     j = 1
     while j < (len(array)):
         key = array[j]
@@ -9,12 +9,12 @@ def insertion_sort_inc(array):
         while i >= 0 and array[i] > key:
             array[i + 1] = array[i]
             i -= 1
-        array[i] = key
+        array[i + 1] = key
         j += 1
     return array
 
 
-def insertion_sort_dec(array):
+def insertion_sort_desc(array):
     j = 1
     while j < (len(array)):
         key = array[j]
