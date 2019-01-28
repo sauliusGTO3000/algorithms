@@ -1,5 +1,7 @@
 import random_helper
+
 unsorted_list = random_helper.random_array(9)
+
 
 def insertion_sort_asc(array):
     j = 1
