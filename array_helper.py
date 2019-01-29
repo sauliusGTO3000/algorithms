@@ -4,3 +4,9 @@ def number_to_array(number):
     for digit in string:
         array.append(int(digit))
     return array
+
+def implode_array(array):
+    result = ""
+    for element in array:
+        result += str(element)
+    return result
