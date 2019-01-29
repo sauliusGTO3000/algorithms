@@ -12,9 +12,8 @@ def binary_to_decimal(binary):
     return decimal
 
 def decimal_to_binary(decimal):
-    quotient = decimal
     binaryArray = []
-    while decimal >= 1:
+    while decimal > 1:
         quotient = decimal / 2
         remainder = decimal % 2
         if remainder < 1:
